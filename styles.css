@@ -22,9 +22,13 @@ header{
 
 }
 
+#navbar a{
+    text-decoration: none;
+    color:inherit;
+}
 .nav-list ul{
     list-style-type: none;
-    height: 88%;
+    height: 50%;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
@@ -34,9 +38,9 @@ header{
     border-top: 1px solid;
     padding: 10px;
 }
-a{
+.nav-list a{
     text-decoration: none;
-   color:inherit;
+    color:inherit;
 }
 #main-doc {
     position: absolute;
@@ -45,12 +49,42 @@ a{
     margin-bottom: 110px;
 }
 .main-section{
-    border: 2px red solid;
+    
     margin-bottom: 30px;
 }
 .article{
     padding-left: 40px;
 }
 .article p {
-    padding-top: 20px;
+    padding: 11px 0;
+}
+.article ul{
+    list-style-type: none;
+    line-height: 2em;
+    padding: 10px 0 10px 20px;
+}
+
+.article code{
+    display: block;
+    width: 95%;
+    background-color: rgba(150, 155, 155, 0.562);
+}
+strong{
+    display: block;
+    margin: 13px 0;
+    
+}
+@media only screen and (max-width: 600px){
+    #navbar, #main-doc{
+       position: relative;
+       width: 100%;
+       margin-left: 0;
+    }
+    
+    #navbar{
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 300px;
+    }
+    
 }
